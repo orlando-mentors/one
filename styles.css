@@ -7,26 +7,20 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 /* Header */
 header {
     background-color: #2c3e50;
     color: white;
     padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2em;
-    text-align: center;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
     padding: 0;
 }
 
@@ -42,21 +36,22 @@ nav ul li a {
 }
 
 /* Hero Section */
-.hero {
-    background-image: url('https://example.com/hero-image.jpg');
+.hero-section {
+    background-image: url('https://example.com/hero-image.jpg'); /* Replace with your image URL */
     background-size: cover;
+    background-position: center;
     color: white;
     padding: 80px 0;
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 3em;
+.hero-section h2 {
+    font-size: 3.5em;
 }
 
-.hero p {
-    font-size: 1.2em;
-    margin-top: 10px;
+.hero-section p {
+    font-size: 1.3em;
+    margin-top: 20px;
 }
 
 .cta-button {
@@ -66,39 +61,43 @@ nav ul li a {
     font-size: 1.1em;
     text-decoration: none;
     border-radius: 5px;
+    margin-top: 30px;
+    display: inline-block;
 }
 
 /* About Section */
-.about {
+.about-section {
+    padding: 60px 0;
     background-color: #ecf0f1;
-    padding: 50px 0;
     text-align: center;
 }
 
-.about p {
+.about-section p {
     font-size: 1.2em;
 }
 
 /* Courses Section */
-.courses {
-    background-color: #fff;
-    padding: 50px 0;
+.courses-section {
+    padding: 60px 0;
+    background-color: white;
+    text-align: center;
 }
 
-.courses h2 {
-    text-align: center;
+.courses-section h2 {
     margin-bottom: 40px;
 }
 
 .course-cards {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .course-card {
     background-color: #3498db;
     color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 8px;
     width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -110,16 +109,22 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
+.course-card p {
+    font-size: 1.1em;
+}
+
 /* Testimonials Section */
-.testimonials {
+.testimonials-section {
+    padding: 60px 0;
     background-color: #f1c40f;
-    padding: 50px 0;
     text-align: center;
 }
 
 .testimonial-cards {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .testimonial-card {
@@ -140,26 +145,29 @@ nav ul li a {
 }
 
 /* Contact Section */
-.contact {
-    padding: 50px 0;
+.contact-section {
+    padding: 60px 0;
     background-color: #34495e;
     color: white;
+    text-align: center;
 }
 
-.contact form {
+.contact-section form {
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
 }
 
-.contact input, .contact textarea {
+.contact-section input,
+.contact-section textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.contact button {
+.contact-section button {
     padding: 15px 30px;
     background-color: #e74c3c;
     color: white;
@@ -174,4 +182,22 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .course-cards,
+    .testimonial-cards {
+        flex-direction: column;
+    }
+
+    .course-card,
+    .testimonial-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
 }
