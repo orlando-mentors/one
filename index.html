@@ -3,70 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English - Teaching Website</title>
+    <title>Learn English - For Indians Living Abroad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Learn English with Us</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#quiz">Quiz</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>English for Indians Abroad</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="home">
-        <h2>Welcome to Our English Learning Platform</h2>
-        <p>We offer a variety of courses to help you learn and master the English language. Whether you're a beginner or looking to refine your skills, we have the right program for you!</p>
-    </section>
-
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Our mission is to help people from all over the world improve their English skills. We have expert teachers and a comprehensive curriculum to guide you every step of the way.</p>
-    </section>
-
-    <section id="courses">
-        <h2>Our Courses</h2>
-        <div class="course-card">
-            <h3>Basic English</h3>
-            <p>Learn basic vocabulary, sentence structure, and grammar.</p>
-        </div>
-        <div class="course-card">
-            <h3>Intermediate English</h3>
-            <p>Improve your English fluency and communication skills.</p>
-        </div>
-        <div class="course-card">
-            <h3>Advanced English</h3>
-            <p>Master advanced grammar, writing, and speaking skills.</p>
+        <div class="hero">
+            <h2>Learn English with Confidence, No Matter Where You Are!</h2>
+            <p>Perfect for Indians living abroad who want to improve their English communication skills for work, studies, or daily life.</p>
+            <a href="#courses" class="cta-button">Explore Our Courses</a>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions, please feel free to reach out!</p>
-        <ul>
-            <li>Email: <a href="mailto:info@learnenglish.com">info@learnenglish.com</a></li>
-            <li>Phone: (123) 456-7890</li>
-        </ul>
-    </section>
-
-    <section id="quiz">
-        <h2>English Quiz</h2>
-        <p>Test your English skills with this short quiz!</p>
-        <button id="start-quiz">Start Quiz</button>
-        <div id="quiz-container" style="display:none;">
-            <p id="question">Question will appear here.</p>
-            <ul id="answers">
-                <!-- Quiz answers will go here -->
-            </ul>
-            <button id="next-question">Next Question</button>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are passionate about helping Indians living abroad improve their English skills. Our expert instructors provide personalized lessons, whether you're just starting or looking to refine your skills.</p>
         </div>
     </section>
 
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="course-cards">
+                <div class="course-card">
+                    <h3>Basic English</h3>
+                    <p>Ideal for beginners. Learn fundamental vocabulary, grammar, and sentence structure.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Business English</h3>
+                    <p>Improve your professional communication skills for work and business settings.</p>
+                </div>
+                <div class="course-card">
+                    <h3>Advanced English</h3>
+                    <p>Master complex grammar, writing, and speaking skills for fluent communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"This course really helped me improve my speaking skills. I feel more confident in my day-to-day conversations!"</p>
+                    <h4>Raj, UK</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I was struggling with business English, but the tailored lessons helped me get better at work. Highly recommend!"</p>
+                    <h4>Priya, USA</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Learn Engl
+        <div class="container">
+            <p>&copy; 2024 English for Indians Abroad | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
